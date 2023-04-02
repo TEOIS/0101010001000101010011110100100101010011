@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<! This login page is created by MR.BILAL ALI students of Daanish school jand,Attock >
+<html lang="en">
+<! popu>
+<script>window.confirm("This login page is created by MR.BILAL ALI CEO of TEOIS(THE EYE OF INFOSEC")</script>
+<head>
+    <title>DANISH LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <img src="wave.svg" alt="" class="img">
+    <div class="login">
+        <img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" class="avatar">
+        <h2 style="font-size: 25px;">TEOIS LOGIN</h2>
+        <div class="input-text">
+            <i class="fa fa-user"></i>
+<form name="login">            
+<input type="text" name="userid" value="" placeholder="username">
+        </div>
+        <div class="input-text">
+            <i class="fa fa-lock"></i>
+            <input type="password" name="pswrd" value="" placeholder="password">
+        </div>
+        <input type="button" class="btn" onclick="check(this.form)" value="login" /><center></center></a>
+        <div class="remember">
+            <input type="checkbox" checked name="">remember me
+            <a href=""> forget password</a>
+        </div>
+    </div>
+</form>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.userid.value == "bilal7397" && form.pswrd.value == "BILALHEREINFO")
+  {
+    window.open('main.html')/*opens the target page while Id & password matches this*/
+  }
+ else
+ {
+   alert("SORRY SIR ! \n PLAESE ENTER CORRECT PASSWORD&USERNAME.\n THANKS!!!!")/*displays error message*/
+  }
+}
+</script>
+</body>
+
+</html>
+---------------------------------------------------
+@import url("https://fonts.googleapis.com/css?family merienda&display swap");
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.login {
+  position: relative;
+  margin:  20px 350px;
+  width: 250px;
+  height: 450px;
+  background: linear-gradient(0deg, #000, #272727);
+   border: 5px solid gray;
+    border-radius: 10px;
+    transition: .5s ease;
+    padding: 40px;
+}
+
+.login:before, .login:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.login:after {
+  filter: blur(50px);
+}
+.jaww {
+  position: relative;
+  margin:  620px 20px;
+  width: 275px;
+  height: 550px;
+  border: 5px solid gray;
+  border-radius: 10px;
+  transition: .5s ease;
+  padding: 40px;
+  border-bottom: 5px solid gray;
+  border-top: 5px solid yellow;
+  background:BLACK;
+  transition: .5s ease;
+  padding: 40px;
+}
+
+.jaww:before, .jaww:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.jaww:after {
+  filter: blur(50px);
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: relative;
+    margin-left: 90px;
+}
+h2{
+    font-size: 39px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+    color: GRAY;
+}
+.input-text{
+    position: relative;
+    margin: 20px 0;
+}
+.input-text input{
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-weight: 16px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    border-bottom: 2px solid #b3b3b3;
+    transition: .5s ease;
+    background: none;
+    color: white;
+}
+.input-text input:focus{
+    border-bottom: 5px solid RED;
+    border-radius: 10px;
+}
+.input-text i{
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+    color: #63DBFF;
+}
+.btn{
+    width: 100%;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10x;
+    background: GREEN;
+    cursor: pointer;
+    transation: .15s ease;
+    color: white;
+}
+.btn:hover{
+    background: green;
+    color: #fff;
+}
+.remember{
+    margin-top: 45px;
+    color: #b3b3b3;
+}
+a{
+    float: right;
+}
+.img{
+    position: absolute;
+    margin-top: 460px;
+}
+</Style>
